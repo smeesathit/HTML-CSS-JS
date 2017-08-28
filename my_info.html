@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Information</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Adding favicon with link tag -->	
+		<link rel="icon" type="image/png" sizes="24x24" href="favicon.png"/>
+
+		<!-- Link to external style sheet -->
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<!-- Embedded style sheet-->
+		<style>
+			/*ul {
+			    background: #3399ff;
+				padding-top: 10px;
+    			padding-bottom: 10px;
+    			padding-right: 10px;		    
+			}
+
+			ul li {
+			    background: #cce5ff;
+			    margin: 5px;
+			}*/
+
+			ul.heart_icon {
+			    list-style-image: url('icons/ic_favorite_black_24dp_1x.png');
+
+			}
+			ul.music_icon {
+			    list-style-image: url('icons/ic_queue_music_black_24dp_1x.png');
+
+			}
+
+			ol.roman {
+			    list-style-type: upper-roman;
+			}
+
+			ol.alphabet {
+			    list-style-type: lower-alpha;
+			}
+
+			table, th, td {
+			   border: 1px solid black;
+			}
+
+			th {
+				background-color:#8B008B;
+			}
+
+			tr:hover{background-color:#9932CC}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="flex-container">
+			<!-- Page's header -->
+			<header>
+  				<h1>เว็บส่วนตัวของฉัน</h1>
+			</header>
+
+			<!-- Main menu on the left -->
+			<nav class="nav">
+				<ul >
+					<li><a href="index.html">หน้าหลัก</a></li>
+					<li><a href="my_info.html">ข้อมูลของฉัน</a></li>
+					<li><a href="my_favorite_song.html">เพลงโปรด</a></li>
+					<li><a href="my_favorite_clip.html">คลิปโปรด</a></li>
+					<li><a href="my_javascript_sample.html">จาวาสคริปต์โปรด</a></li>
+				</ul>
+			</nav>
+			
+			<!-- Page's content-->
+			<article class="article">
+			<div class="top_nav">
+				<ul id="top" >
+							
+						<li><a href="#hobby">งานอดิเรก</a></li>
+			<li><a href="#sport">กีฬาที่ชอบ</a></li>			
+			<li><a href="#food">อาหารที่ชอบ</a></li>
+			<li><a href="#book">หนังสือที่ชอบ</a></li>
+
+			</ul>
+			</div>
+			
+			<br><br>
+
+
+		<h2 id="hobby">งานอดิเรก</h2>
+		<ul class="heart_icon">
+			<li>อ่านหนังสือ</li>
+			<li>ถักไหมพรม</li>
+		</ul>
+		<a href="#top"><img src="icons/ic_arrow_upward_black_24dp_1x.png"> กลับด้านบน</a>
+		
+		<h2 id="sport">กีฬาที่ชอบ</h2>
+		<ul class="music_icon">
+			<li>ว่ายน้ำ</li>
+			<li>เทนนิส</li>
+			<li>ตี่จับ</li>
+		</ul>
+		<a href="#top"><img src="icons/ic_arrow_upward_black_24dp_1x.png"> กลับด้านบน</a>
+
+		<h2 id="food">อาหารที่ชอบ เรียงตามลำดับ</h2>
+		<ol class="roman">
+			<li>น้ำพริกกะปิ</li>
+			<li>ข้าวแช่</li>
+			<li>พิซซ่า</li>
+		</ol>
+		<a href="#top"><img src="icons/ic_arrow_upward_black_24dp_1x.png"> กลับด้านบน</a>
+
+		<h2 id="book">หนังสือที่ชอบ</h2>
+		<table>
+		  <tr id="center">
+		    <th>ชื่อหนังสือ</th>
+		    <th>ชื่อผู้แต่ง</th> 
+		    <th>ปีพิมพ์</th>
+		  </tr>
+		  <tr>
+		    <td>Harry Potter and the Philosopher's Stone</td>
+		    <td>J. K. Rowling</td> 
+		    <td>1997</td>
+		  </tr>
+		  <tr>
+		    <td>The Lord of the Rings</td>
+		    <td>J. R. R. Tolkien.</td> 
+		    <td>1954</td>
+		  </tr>
+		</table>
+		<a href="#top"><img src="icons/ic_arrow_upward_black_24dp_1x.png"> กลับด้านบน</a>
+
+			</article>
+
+			<!-- Page's footer-->
+			<footer>Copyright &copy; Dr.Sooksathit Meesathit</footer>
+		</div>
+	</body>
+</html>

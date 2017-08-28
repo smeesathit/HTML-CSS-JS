@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My JavaScript Samples</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Adding favicon with link tag -->	
+		<link rel="icon" type="image/png" sizes="24x24" href="favicon.png"/>
+
+		<!-- Link to external style sheet -->
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<!-- JavaScript in head element -->
+		<!-- This script show current date and time in popup -->
+		<script type="text/javascript">
+			var date = new Date();
+			var thday = new Array ("อาทิตย์","จันทร์","อังคาร","พุธ","พฤหัส","ศุกร์","เสาร์"); 
+			var thmonth = new Array ("มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน", "กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");var dateString = "";
+			dateString = "วันนี้คือ วัน" + thday[date.getDay()] + " ที่ " + date.getDate() + " เดือน " + thmonth[date.getMonth()] + " ปีพ.ศ." + (date.getFullYear()+ 543);
+			alert(dateString);
+		</script>
+
+	</head>
+
+	<body>
+	
+		<div class="flex-container">
+			<!-- Page's header -->
+			<header>
+  				<h1>เว็บส่วนตัวของฉัน</h1>
+			</header>
+
+			<!-- Main menu on the left -->
+			<nav class="nav">
+				<ul >
+					<li><a href="index.html">หน้าหลัก</a></li>
+					<li><a href="my_info.html">ข้อมูลของฉัน</a></li>
+					<li><a href="my_favorite_song.html">เพลงโปรด</a></li>
+					<li><a href="my_favorite_clip.html">คลิปโปรด</a></li>
+					<li><a href="my_javascript_sample.html">จาวาสคริปต์โปรด</a></li>
+				</ul>
+			</nav>
+			
+			<!-- Page's content-->
+			<article class="article">
+				<h2>
+					การเพ่ิม และ ลบรายการด้วย JavaScript
+				</h2>
+
+				<h3>รายการ</h3>
+				<ul id="dynamic-list"></ul>
+
+			    <input type="text" id="candidate"/>
+			    <br><br>
+			    <button onclick="addItem()">เพิ่มรายการ</button>
+			    <button onclick="removeItem()">ลบรายการ</button>
+
+			    <!-- Using external script file-->
+			    <script src="javascript/add_remove_items_list.js"></script>
+   
+			</article>
+
+			<!-- Page's footer-->
+			<footer>Copyright &copy; Dr.Sooksathit Meesathit</footer>
+		</div>
+	</body>
+</html>
